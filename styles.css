@@ -1,0 +1,145 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+nav {
+    background-color: #444;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    background-color: #fff;
+}
+
+
+/* Стили для видео секции на главной странице */
+.video-section {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    filter: brightness(50%);
+}
+
+.centered-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.centered-text h1 {
+    font-size: 4rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    letter-spacing: 2px;
+}
+
+/* Стили для таблицы игроков */
+.players-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.players-table th, .players-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.players-table th {
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+.players-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.players-table td {
+    vertical-align: middle;
+}
+
+/* Стили для списка клубов */
+.clubs-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+
+/* Стили для ссылок с hover эффектами */
+nav a:hover, .nav-link:hover {
+    color: #ddd;
+    text-decoration: underline;
+}
+
+/* Псевдоэлементы для декоративных эффектов */
+.header::before {
+    content: "";
+    display: block;
+    height: 4px;
+    background-color: #ff8800;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.button:hover {
+    background-color: #ff8800;
+    color: white;
+    transition: 0.3s;
+}
+
+/* Стили для форм */
+.form-input {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.submit-btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}   
